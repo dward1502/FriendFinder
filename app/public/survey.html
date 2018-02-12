@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Reservation Page</title>
+
+        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2> Survey Questions</h2>
+        <hr>
+        <h3><strong>About You</strong></h3>
+        <h4>Name (required)</h4>
+        <input id="name" class="form-control" required= "" type="text">
+        <h4>Link to Photo Image (required)</h4>
+        <input id="photo" class="form-control" required= "" type="text">
+        <hr>       
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>When there is a difficult task ahead do you confront it head on?</h4>
+        <div class="form-group">
+            <label for="sel1">Choose one below</label>
+            <select class="form-control" id="q1_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>With a choice of betraying your loved ones for personal gain... would you?</h4>
+        <div class="form-group">
+            <label for="sel2">Choose one below</label>
+            <select class="form-control" id="q2_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>If all else fails will you be the one to step up and take control of the situation?</h4>
+        <div class="form-group">
+            <label for="sel3">Choose one below</label>
+            <select class="form-control" id="q3_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>Would you do the right thing no matter if it hurts people you are close too?</h4>
+        <div class="form-group">
+            <label for="sel4">Choose one below</label>
+            <select class="form-control" id="q4_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>Is bronze better than brains?</h4>
+        <div class="form-group">
+            <label for="sel5">Choose one below</label>
+            <select class="form-control" id="q5_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>Speaking the truth is more important than decieving for a personal benefit?</h4>
+        <div class="form-group">
+            <label for="sel6">Choose one below</label>
+            <select class="form-control" id="q6_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>Practical jokes are fun to play on people?</h4>
+        <div class="form-group">
+            <label for="sel7">Choose one below</label>
+            <select class="form-control" id="q7_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>You feel that teamwork is better than going solo?</h4>
+        <div class="form-group">
+            <label for="sel8">Choose one below</label>
+            <select class="form-control" id="q8_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You find it easy to overcome overwhelming odds?</h4>
+        <div class="form-group">
+            <label for="sel9">Choose one below</label>
+            <select class="form-control" id="q9_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>You see the good in people no matter what they do?</h4>
+        <div class="form-group">
+            <label for="sel10">Choose one below</label>
+            <select class="form-control" id="q10_chose">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <button id="submit" class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        <hr>
+
+
+    </div>        
+
+</body>
+<script type="text/javascript">
+    $("#submit").on("click", function(event){
+        event.preventDefault();
+        let inputs = [];
+        let q1 = parseInt($("#q1_chose").val());
+        let q2 = parseInt($("#q2_chose").val());
+        let q3 = parseInt($("#q3_chose").val());
+        let q4 = parseInt($("#q4_chose").val());
+        let q5 = parseInt($("#q5_chose").val());
+        let q6 = parseInt($("#q6_chose").val());
+        let q7 = parseInt($("#q7_chose").val());
+        let q8 = parseInt($("#q8_chose").val());
+        let q9 = parseInt($("#q9_chose").val());
+        let q10 = parseInt($("#q10_chose").val());
+        inputs.push(q1,q2,q3,q4,q5,q6,q7,q8,q9,q10);
+        console.log(inputs);
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: inputs
+        }
+        console.log(newFriend);
+
+        $.post("/api/friends", newFriend).then(function(data){
+            console.log(data);
+            alert("Checking for a friend that is close to your values...");
+        });
+    });
+
+</script>
+
+</html>
