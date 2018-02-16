@@ -1,3 +1,16 @@
 .form-control{
     width: 200px;
 }
+body {
+    background: #E96E82;
+}
+
+hr {
+    border-color: inherit;
+    margin: 1em 0;
+}
+
+#resultsModal img {
+    overflow: hidden;
+    width: 500px;
+}

@@ -50,22 +50,5 @@ var friends = [
     },
 ];
 
-function checkScore (userInput){
-    for(var i = 0; i < friends.length; i ++){
-        var scoreArr = friends[i].scores;
-        var inputs = [2, 2, 3, 4, 1, 3, 5, 2, 5, 1];
+module.exports = friends;
 
-        
-        var result = scoreArr.map(function(item,index){
-            return Math.abs(item - inputs[index]);
-        });
-      //  console.log (result);
-        var finalScore = result.reduce(function(a,b){ return a + b; }, 0);
-       // console.log("Score for each friend : " + finalScore);
-        if (finalScore < 10 || finalScore == 0) {
-            console.log(finalScore);
-        }
-    }
-    
-}
-checkScore();

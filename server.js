@@ -3,19 +3,14 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
-
-
-
-
-
-
-
-
+//Routing
+require(path.join(__dirname,'./app/routing/apiRoutes.js'))(app);
+require(path.join(__dirname,'./app/routing/htmlRoutes.js'))(app);
 
 
 app.listen(PORT,function(){
