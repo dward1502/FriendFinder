@@ -168,7 +168,10 @@
         <br>
         <br>
         <button id="submit" class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
-        <hr>
+        <br>
+        <a href="https://github.com/dward1502/FriendFinder" class="github">Git Hub Repo</a>
+        <a href="/api/friends">API Friends List</a>
+        <a href="/survey">Survey</a>    
     </div>  
     
     <!-- Modal Dialog Displaying Closest Friend Match -->
@@ -218,7 +221,16 @@
         var newFriend = {
             name: $("#name").val().trim(),
             photo: $("#photo").val().trim(),
-            scores: inputs
+            scores: [ $("#q1_chose").val().trim(),
+             $("#q2_chose").val().trim(),
+             $("#q3_chose").val().trim(),
+             $("#q4_chose").val().trim(),
+            $("#q5_chose").val().trim(),
+             $("#q6_chose").val().trim(),
+             $("#q7_chose").val().trim(),
+             $("#q8_chose").val().trim(),
+             $("#q9_chose").val().trim(),
+             $("#q10_chose").val().trim()]
         };
         console.log(newFriend);
               var currentURL = window.location.origin;

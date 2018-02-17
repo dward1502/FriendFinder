@@ -4,7 +4,7 @@ var path = require('path');
 module.exports = function(app){
 
     app.get("/api/friends", function(req, res){
-        res.json(friendsList);
+        res.json(friends);
     });
 
     app.post("/api/friends", function(req,res){
@@ -17,8 +17,8 @@ module.exports = function(app){
 
         var newFriend = req.body;
         var newFriendScore = newFriend.scores;
-        console.log(newFriend);
-        console.log(newFriendScore);
+      //  console.log(newFriend);
+        //console.log(newFriendScore);
         var totalDifference = 0;
 
         // Examine all existing friends in the list
@@ -43,14 +43,12 @@ module.exports = function(app){
     }
 
         // Add new user
-    friendsList.push(newFriend);
+    friends.push(newFriend);
 
         // Send appropriate response
     res.json(friendMatch);
 });
         
-        // console.log(newFriends);
-        // friends.push(newFriends);
-};        // res.json(newFriends);
+};
   
 
